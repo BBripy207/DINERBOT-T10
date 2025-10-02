@@ -69,13 +69,6 @@ body {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(74, 158, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.video-container:hover {
-    border-color: rgba(74, 158, 255, 0.5);
-    box-shadow: 0 15px 40px rgba(74, 158, 255, 0.2);
-    transform: translateY(-5px);
 }
 
 .video-container iframe {
@@ -211,13 +204,6 @@ body {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(74, 158, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.presentation-image:hover {
-    border-color: rgba(74, 158, 255, 0.5);
-    box-shadow: 0 15px 40px rgba(74, 158, 255, 0.2);
-    transform: translateY(-5px);
 }
 
 /* Título de Navegación */
