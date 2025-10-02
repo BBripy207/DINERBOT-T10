@@ -240,3 +240,15 @@
         animation: none;
     }
 }
+
+/* Mobile responsive for image gallery */
+@media (max-width: 768px) {
+    .image-container-dual {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .image-container-dual .presentation-image {
+        height: 300px;
+    }
+}
