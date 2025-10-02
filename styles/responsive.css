@@ -247,7 +247,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    
+
     .image-container-dual .presentation-image {
         height: 300px;
     }
