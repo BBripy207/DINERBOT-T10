@@ -101,6 +101,27 @@
     border: 2px solid rgba(74, 158, 255, 0.2);
 }
 
+/* Image gallery for multiple images */
+.image-gallery {
+    margin-top: var(--spacing-lg);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container-dual {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.image-container-dual .presentation-image {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
 /* Navigation items */
 .nav-item {
     background: var(--bg-secondary);
