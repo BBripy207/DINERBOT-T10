@@ -15,12 +15,12 @@
 }
 
 .main-title .highlight {
-    color: #4A9EFF;
-    background: linear-gradient(135deg, #4A9EFF 0%, #007BFF 100%);
+    color: #8A2BE2;
+    background: linear-gradient(135deg, #8A2BE2 0%, #9932CC 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 30px rgba(74, 158, 255, 0.5);
+    text-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
 }
 
 /* Subtítulos */
