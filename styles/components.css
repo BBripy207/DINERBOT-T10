@@ -220,3 +220,72 @@
 .slide-indicator.active {
     background: var(--text-accent);
 }
+
+/* Contact links */
+.footer-contact {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.contact-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    transition: all var(--transition-normal);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Phone icon - white color for better visibility */
+.contact-link .fa-phone {
+    color: #ffffff;
+}
+
+/* WhatsApp icon - green color */
+.contact-link .fa-whatsapp {
+    color: #25D366;
+}
+
+/* Text color */
+.contact-link {
+    color: var(--text-primary);
+}
+
+/* Header contact styles */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.header-contact {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.header-contact .contact-link {
+    padding: var(--spacing-xs);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-normal);
+}
+
+.header-contact .contact-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
