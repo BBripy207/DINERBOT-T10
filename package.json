@@ -1,0 +1,52 @@
+{
+    "name": "dinerbot-t10",
+    "version": "1.0.0",
+    "description": "DINERBOT T10 - Presentación interactiva del proyecto",
+    "main": "index.html",
+    "scripts": {
+        "start": "http-server -p 8000 -c-1",
+        "dev": "live-server --port=3000 --host=localhost",
+        "build": "npm run build:css && npm run build:js",
+        "build:css": "postcss styles/main.css -o dist/styles.min.css --use autoprefixer cssnano",
+        "build:js": "webpack --mode=production",
+        "lint": "eslint components/**/*.js script.js",
+        "lint:fix": "eslint components/**/*.js script.js --fix",
+        "format": "prettier --write \"**/*.{js,css,html,md}\"",
+        "validate": "html-validate index.html",
+        "test": "echo \"No tests specified yet\"",
+        "serve": "python -m http.server 8000"
+    },
+    "keywords": [
+        "dinerbot",
+        "presentation",
+        "interactive",
+        "web",
+        "javascript",
+        "css"
+    ],
+    "author": "Sistemas21ATP",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.4.14",
+        "cssnano": "^6.0.1",
+        "eslint": "^8.44.0",
+        "html-validate": "^8.1.0",
+        "http-server": "^14.1.1",
+        "live-server": "^1.2.2",
+        "postcss": "^8.4.24",
+        "postcss-cli": "^10.1.0",
+        "prettier": "^3.0.0",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sistemas21ATP/DINERBOT-T10.git"
+    },
+    "homepage": "https://sistemas21atp.github.io/DINERBOT-T10/"
+}

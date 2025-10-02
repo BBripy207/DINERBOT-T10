@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DINERBOT T10 - Presentación</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
-        <img src="simir.png" alt="SIMIR Logo" class="header-logo">
+        <div class="header-left">
+            <img src="assets/images/simir.png" alt="SIMIR Logo" class="header-logo">
+            <div class="header-contact">
+                <a href="tel:+526145518651" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://wa.me/526145518651?text=Hola,%20me%20interesa%20información%20sobre%20DINERBOT%20T10"
+                    class="contact-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">DINERBOT T10</a></li>
+                <li><a href="butlerbot.html" class="nav-link">DINERBOT T9</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="presentation-container">
         <div class="content">
@@ -19,7 +41,7 @@
                 DINERBOT <span class="highlight">T10</span>
             </h1>
             <div class="image-container">
-                <img src="1.png" alt="DINERBOT T10 Introducción" class="presentation-image">
+                <img src="assets/images/1.png" alt="DINERBOT T10 Introducción" class="presentation-image">
             </div>
             <h2 class="interaction-title">
                 Interactivo y atractivo, haciendo cada momento divertido
@@ -93,7 +115,7 @@
                     class="highlight-text">Pantalla grande</span>
             </p>
             <div class="image-container">
-                <img src="2.png" alt="DINERBOT T10 Estilos y Accesorios" class="presentation-image">
+                <img src="assets/images/2.png" alt="DINERBOT T10 Estilos y Accesorios" class="presentation-image">
             </div>
             <h2 class="navigation-title">Navegación y posicionamiento precisos</h2>
             <p class="mapping-description">
@@ -122,19 +144,31 @@
                 </iframe>
             </div>
             <div class="image-container">
-                <img src="5.png" alt="DINERBOT T10 Final" class="presentation-image">
+                <img src="assets/images/5.png" alt="DINERBOT T10 Final" class="presentation-image">
             </div>
             <div class="image-container">
-                <img src="6.png" alt="DINERBOT T10 Conclusión" class="presentation-image">
+                <img src="assets/images/6.png" alt="DINERBOT T10 Conclusión" class="presentation-image">
             </div>
         </div>
     </div>
     <footer class="footer">
-        <img src="simir.png" alt="SIMIR Logo" class="footer-logo">
+        <img src="assets/images/simir.png" alt="SIMIR Logo" class="footer-logo">
         <div class="footer-contact">
-            <span class="phone-number">+52 614 551 8651</span>
+            <a href="tel:+526145518651" class="contact-link">
+                <i class="fas fa-phone"></i> +52 614 551 8651
+            </a>
+            <a href="https://wa.me/526145518651?text=Hola,%20me%20interesa%20información%20sobre%20DINERBOT%20T10"
+                class="contact-link" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
         </div>
     </footer>
+
+    <!-- Scripts modulares -->
+    <script src="components/SlideshowManager.js"></script>
+    <script src="components/NavigationManager.js"></script>
+    <script src="components/AnimationManager.js"></script>
+    <script src="components/app.js"></script>
 
 </body>
 
