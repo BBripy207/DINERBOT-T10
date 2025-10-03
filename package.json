@@ -1,43 +1,38 @@
 {
     "name": "dinerbot-t10",
     "version": "1.0.0",
-    "description": "DINERBOT T10 - Presentación interactiva del proyecto",
-    "main": "index.html",
+    "description": "DINERBOT T10 - Presentación interactiva del proyecto con Astro 5.0",
+    "type": "module",
     "scripts": {
-        "start": "http-server -p 8000 -c-1",
-        "dev": "live-server --port=3000 --host=localhost",
-        "build": "npm run build:css && npm run build:js",
-        "build:css": "postcss styles/main.css -o dist/styles.min.css --use autoprefixer cssnano",
-        "build:js": "webpack --mode=production",
-        "lint": "eslint components/**/*.js script.js",
-        "lint:fix": "eslint components/**/*.js script.js --fix",
-        "format": "prettier --write \"**/*.{js,css,html,md}\"",
-        "validate": "html-validate index.html",
-        "test": "echo \"No tests specified yet\"",
-        "serve": "python -m http.server 8000"
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "legacy:start": "http-server -p 8000 -c-1",
+        "legacy:dev": "live-server --port=3000 --host=localhost"
     },
     "keywords": [
         "dinerbot",
+        "astro",
         "presentation",
         "interactive",
         "web",
-        "javascript",
-        "css"
+        "typescript",
+        "modern"
     ],
     "author": "Sistemas21ATP",
     "license": "MIT",
+    "dependencies": {
+        "astro": "^4.15.0",
+        "@astrojs/check": "^0.9.0",
+        "@astrojs/sitemap": "^3.1.0",
+        "typescript": "^5.6.0"
+    },
     "devDependencies": {
-        "autoprefixer": "^10.4.14",
-        "cssnano": "^6.0.1",
-        "eslint": "^8.44.0",
-        "html-validate": "^8.1.0",
-        "http-server": "^14.1.1",
-        "live-server": "^1.2.2",
-        "postcss": "^8.4.24",
-        "postcss-cli": "^10.1.0",
-        "prettier": "^3.0.0",
-        "webpack": "^5.88.1",
-        "webpack-cli": "^5.1.4"
+        "@astrojs/ts-plugin": "^1.10.0",
+        "sharp": "^0.33.0",
+        "prettier": "^3.0.0"
     },
     "browserslist": [
         "> 1%",
