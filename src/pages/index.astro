@@ -1,7 +1,10 @@
 ---
 title: "DINERBOT T10"
 description: "Presentación del robot DINERBOT T10"
+import { Image } from 'astro:assets';
+import { ViewTransitions } from 'astro:transitions';
 ---
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +18,9 @@ description: "Presentación del robot DINERBOT T10"
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="/DINERBOT-T10/components/GlobalComponents.js" is:inline></script>
+    
+    <!-- View Transitions para navegación fluida -->
+    <ViewTransitions />
 </head>
 
 <body>
@@ -25,7 +31,7 @@ description: "Presentación del robot DINERBOT T10"
                 DINERBOT <span class="highlight">T10</span>
             </h1>
             <div class="image-container">
-                <img src="/DINERBOT-T10/assets/images/1.png" alt="DINERBOT T10 Introducción" class="presentation-image">
+                <Image src="/DINERBOT-T10/assets/images/1.png" alt="DINERBOT T10 Introducción" class="presentation-image" width={800} height={600} loading="lazy" />
             </div>
             <h2 class="interaction-title">
                 Interactivo y atractivo, haciendo cada momento divertido
@@ -99,7 +105,7 @@ description: "Presentación del robot DINERBOT T10"
                     class="highlight-text">Pantalla grande</span>
             </p>
             <div class="image-container">
-                <img src="/DINERBOT-T10/assets/images/2.png" alt="DINERBOT T10 Estilos y Accesorios" class="presentation-image">
+                <Image src="/DINERBOT-T10/assets/images/2.png" alt="DINERBOT T10 Estilos y Accesorios" class="presentation-image" width={800} height={600} loading="lazy" />
             </div>
             <h2 class="navigation-title">Navegación y posicionamiento precisos</h2>
             <p class="mapping-description">
@@ -128,10 +134,10 @@ description: "Presentación del robot DINERBOT T10"
                 </iframe>
             </div>
             <div class="image-container">
-                <img src="/DINERBOT-T10/assets/images/5.png" alt="DINERBOT T10 Final" class="presentation-image">
+                <Image src="/DINERBOT-T10/assets/images/5.png" alt="DINERBOT T10 Final" class="presentation-image" width={800} height={600} loading="lazy" />
             </div>
             <div class="image-container">
-                <img src="/DINERBOT-T10/assets/images/6.png" alt="DINERBOT T10 Conclusión" class="presentation-image">
+                <Image src="/DINERBOT-T10/assets/images/6.png" alt="DINERBOT T10 Conclusión" class="presentation-image" width={800} height={600} loading="lazy" />
             </div>
         </div>
     </div>

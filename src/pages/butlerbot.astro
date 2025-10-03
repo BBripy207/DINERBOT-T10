@@ -1,7 +1,10 @@
 ---
 title: "DINERBOT T9"
 description: "Presentación del robot DINERBOT T9"
+import { Image } from 'astro:assets';
+import { ViewTransitions } from 'astro:transitions';
 ---
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +18,9 @@ description: "Presentación del robot DINERBOT T9"
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="/DINERBOT-T10/components/GlobalComponents.js" is:inline></script>
+    
+    <!-- View Transitions para navegación fluida -->
+    <ViewTransitions />
 </head>
 
 <body>
@@ -28,7 +34,7 @@ description: "Presentación del robot DINERBOT T9"
                 </h1>
 
                 <div class="image-container">
-                    <img src="/DINERBOT-T10/assets/images/DINERBOT-09/DINERBOT-9-01.png" alt="DINERBOT T9" class="presentation-image">
+                    <Image src="/DINERBOT-T10/assets/images/DINERBOT-09/DINERBOT-9-01.png" alt="DINERBOT T9" class="presentation-image" width={800} height={600} loading="lazy" />
                 </div>
                 <h2 class="interaction-title-purple">
                     Bandejas Ajustables
@@ -132,8 +138,8 @@ description: "Presentación del robot DINERBOT T9"
                 </div>
                 <div class="image-gallery">
                     <div class="image-container-dual">
-                        <img src="/DINERBOT-T10/assets/images/DINERBOT-09/DINERBOT-9-02.png" alt="DINERBOT T9" class="presentation-image">
-                        <img src="/DINERBOT-T10/assets/images/DINERBOT-09/DINERBOT-9-03.png" alt="DINERBOT T9" class="presentation-image">
+                        <Image src="/DINERBOT-T10/assets/images/DINERBOT-09/DINERBOT-9-02.png" alt="DINERBOT T9" class="presentation-image" width={500} height={400} loading="lazy" />
+                        <Image src="/DINERBOT-T10/assets/images/DINERBOT-09/DINERBOT-9-03.png" alt="DINERBOT T9" class="presentation-image" width={500} height={400} loading="lazy" />
                     </div>
                 </div>
             </div>

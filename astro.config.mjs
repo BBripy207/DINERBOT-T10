@@ -6,13 +6,29 @@ export default defineConfig({
     site: 'https://sistemas21atp.github.io',
     base: '/DINERBOT-T10',
 
-    // Optimizaciones de imagen nativas de Astro
+    // Optimizaciones de imagen SUPER POTENCIADAS
     image: {
+        service: {
+            entrypoint: 'astro/assets/services/sharp',
+            config: {
+                quality: 80,
+                format: ['webp', 'avif', 'jpeg']
+            }
+        },
         remotePatterns: [
             { protocol: 'https' },
             { protocol: 'http' }
         ]
     },
+
+    // Optimizaciones de build
+    build: {
+        inlineStylesheets: 'auto',
+        assets: '_astro'
+    },
+
+    // Compresión y minificación
+    compressHTML: true,
 
     // Integrations disponibles
     integrations: [
