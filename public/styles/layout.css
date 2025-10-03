@@ -41,12 +41,6 @@
     border: 1px solid transparent;
 }
 
-.nav-link:hover {
-    background: rgba(74, 158, 255, 0.1);
-    border-color: rgba(74, 158, 255, 0.3);
-    color: #4A9EFF;
-}
-
 .nav-link.active {
     background: linear-gradient(135deg, #4A9EFF 0%, #007BFF 100%);
     color: #ffffff;
