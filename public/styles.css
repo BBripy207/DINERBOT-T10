@@ -108,7 +108,7 @@ body {
     .main-title {
         font-size: 2.5rem;
     }
-    
+
     .interaction-title,
     .service-title,
     .safeguard-title,
@@ -118,7 +118,7 @@ body {
     .algorithms-title {
         font-size: 1.8rem;
     }
-    
+
     .tech-description,
     .detection-description,
     .customization-description,
@@ -126,7 +126,7 @@ body {
     .algorithms-description {
         font-size: 1.1rem;
     }
-    
+
     .presentation-container {
         padding: 1rem;
     }

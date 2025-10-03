@@ -113,19 +113,19 @@ body {
     .main-title {
         font-size: 2.5rem;
     }
-    
+
     .interaction-title-purple {
         font-size: 1.8rem;
     }
-    
+
     .tech-description {
         font-size: 1.1rem;
     }
-    
+
     .presentation-container {
         padding: 1rem;
     }
-    
+
     .image-container-dual {
         grid-template-columns: 1fr;
         gap: 1rem;
