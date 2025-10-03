@@ -26,8 +26,15 @@ class ComponentLoader {
             </div>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="/DINERBOT-T10/" class="nav-link" id="nav-t10">DINERBOT T10</a></li>
-                    <li><a href="/DINERBOT-T10/butlerbot" class="nav-link" id="nav-t9">DINERBOT T9</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            PRODUCTOS <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/DINERBOT-T10/" class="dropdown-link" id="nav-t10">DINERBOT T10</a></li>
+                            <li><a href="/DINERBOT-T10/butlerbot" class="dropdown-link" id="nav-t9">DINERBOT T9</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -42,6 +49,28 @@ class ComponentLoader {
         }
 
         headerContainer.innerHTML = headerHTML;
+
+        // Agregar funcionalidad al dropdown para móviles
+        this.initDropdown();
+    }
+
+    initDropdown() {
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        if (dropdownToggle) {
+            dropdownToggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+            });
+        }
+
+        // Cerrar dropdown al hacer click fuera
+        document.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
     }
 
     loadFooter() {

@@ -3,6 +3,8 @@ title: "DINERBOT T10"
 description: "Presentación del robot DINERBOT T10"
 import { Image } from 'astro:assets';
 import { ViewTransitions } from 'astro:transitions';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="es">
@@ -10,6 +12,7 @@ import { ViewTransitions } from 'astro:transitions';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DINERBOT T10 - Presentación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/DINERBOT-T10/styles/base.css">
     <link rel="stylesheet" href="/DINERBOT-T10/styles/layout.css">
     <link rel="stylesheet" href="/DINERBOT-T10/styles/typography.css">
@@ -17,14 +20,14 @@ import { ViewTransitions } from 'astro:transitions';
     <link rel="stylesheet" href="/DINERBOT-T10/styles/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="/DINERBOT-T10/components/GlobalComponents.js" is:inline></script>
     
     <!-- View Transitions para navegación fluida -->
     <ViewTransitions />
 </head>
 
 <body>
-    <!-- Header se carga automáticamente -->
+    <Header />
+    
     <div class="presentation-container">
         <div class="content">
             <h1 class="main-title">
@@ -141,7 +144,8 @@ import { ViewTransitions } from 'astro:transitions';
             </div>
         </div>
     </div>
-    <!-- Footer se carga automáticamente -->
+    
+    <Footer />
 
     <!-- Scripts modulares -->
     <script src="/DINERBOT-T10/components/SlideshowManager.js" is:inline></script>
