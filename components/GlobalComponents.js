@@ -32,7 +32,7 @@ class ComponentLoader {
             </nav>
         </header>
         `;
-        
+
         // Crear contenedor si no existe
         let headerContainer = document.getElementById('header-container');
         if (!headerContainer) {
@@ -40,7 +40,7 @@ class ComponentLoader {
             headerContainer.id = 'header-container';
             document.body.insertBefore(headerContainer, document.body.firstChild);
         }
-        
+
         headerContainer.innerHTML = headerHTML;
     }
 
@@ -58,7 +58,7 @@ class ComponentLoader {
             </div>
         </footer>
         `;
-        
+
         // Crear contenedor si no existe
         let footerContainer = document.getElementById('footer-container');
         if (!footerContainer) {
@@ -66,18 +66,18 @@ class ComponentLoader {
             footerContainer.id = 'footer-container';
             document.body.appendChild(footerContainer);
         }
-        
+
         footerContainer.innerHTML = footerHTML;
     }
 
     setActiveNavigation() {
         setTimeout(() => {
             const currentPage = window.location.pathname.split('/').pop();
-            
+
             // Resetear navegación activa
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => link.classList.remove('active'));
-            
+
             // Establecer navegación activa según la página
             if (currentPage === 'index.html' || currentPage === '') {
                 const t10Link = document.getElementById('nav-t10');
